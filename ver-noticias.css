@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap');
+
+* {
+    font-size: 14px;
+    font-family: 'Darker Grotesque', sans-serif;  
+    
+}
+.body-verNoticias{
+    margin: 2%;
+}
+
+.footer-white{
+    background-color: white;
+}
+
+.form-input{
+    width: 50%;
+}
+.form-textarea{
+    width: 70%;
+}
+.form{
+    width: 100%;
+}
+/*--------------------------------------FIN GENERAL-------------*/
+
+.pong-izquierda a{
+    text-decoration: none;
+    color: rgb(19, 17, 17);
+    font-size: 4em;
+}
+.barra-central{
+    font-size: 2em;
+    margin-left: 2%;
+    text-decoration: none;
+}
+
+h2{
+    font-size: 1.2em;
+    text-transform: uppercase;
+
+}
+.titulo-admin{
+    font-size: 2em;
+    margin-top:  4%;
+}
+
+.btn{
+    background-color: transparent;
+    
+}
+button{
+    background-color:blue;
+    border: none;
+    height: 50px;
+    border-radius:15px 50px 30px 5px;
+
+}
+button a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Darker Grotesque', sans-serif;  
+}
+.contenedor-a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contenedor-bis{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+}
+.noticia{
+    margin: 10px;
+    padding: 20px;
+    background-color:whitesmoke;
+    width: 200px;
+    border-radius:15px 50px 30px 5px;
+}
+.noticia div{
+    margin: auto;
+}
+.img-base{
+    background-color: tomato;
+    height: 65px;
+    width: 65px;
+    margin: 5px;
+    border-radius: 100%;
+}
+.autor{
+    font-size: 5em;
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+}
+footer{
+    margin: 0px !important;
+}
+.logout{
+    font-weight: bold;
+    color: tomato;
+    margin-left: 2%;
+    cursor: pointer;
+}
+hr{
+    background-color:whitesmoke;
+    border:none;
+    height: 2px;
+}
+/*---------------------------------------------LOGIN--------------------------------------*/
+.btn-volver{
+    background-color: tomato;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+}
+.registro{
+    display: block;
+    text-align: center;
+    height: 600px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+}
+input{
+    margin: 5%;
+}
+.enviar{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: tomato;
+    cursor: pointer;
+}
+/*================--------------------editar-noticias2-----------------*/
+.editar-accion{
+    display: flex;
+}
+.form{
+    display: block;
+    text-align: center;    
+}
+input {
+    border-radius:15px 50px 30px 5px;
+    border: 0px;
+    margin: 5px 0px 5px 0px;
+    padding: 0px;
+}
+select {
+    border-radius:15px 50px 30px 5px;
+    border: 0px;
+    margin-right: 5px;
+}
+textarea {
+    border-radius:15px 50px 30px 5px;
+    border: 0px;
+    margin-top: 10px;
+}
+/*================--------------------cargar-noticias-----------------*/
+.body-cargarNoticia{
+    background-color: whitesmoke;
+
+}
+/*================--------------------panel-admin-----------------*/
+
+.autores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    background-color:whitesmoke;
+    width: 900px;
+    border-radius:15px 50px 30px 5px;
+}
+.hr{
+    height: 3px;
+    background-color: black;
+}
+.botonera-admin{
+    display: flex;
+    flex-direction: row;
+}
+.botonera-admin li{
+list-style: none;
+margin: 0px 10px 0px 10px;
+
+}
+.desactivados{
+    background-color: rgb(219, 217, 217);
+    padding-bottom: 2%;
+}
+#contenedor-inactivos{
+    display: flex;
+    flex-direction: row;
+}
+.contenedor-admin{
+    text-align: center;
+    margin: auto;
+}
+.btn1{
+    margin-top: 5%;
+}
+

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap');
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+.contenedor-noticia {
+    margin: 0 1%;
+}
+h4{
+    font-size: 1.2em;
+}
+
+/* BLOQUE SUPERIOR */
+    /* SECCION Y FECHA DE LA NOTICIA */
+.seccion-fecha {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+/* NOMBRE SECCION */
+.seccion-fecha .seccion a {
+    text-decoration: none;
+}
+.seccion-fecha .seccion a h2 {
+    font-size: 2.7em;
+    font-weight: 500;
+    width: 200px;
+}
+.seccion-fecha .seccion a h2:hover {
+    color: rgb(240, 41, 55);
+    transition-duration: 1s;
+    letter-spacing: 0.2em;
+}
+
+/* FECHA */
+.seccion-fecha .fecha h2 {
+    font-size: 2.7em;
+    font-weight: 500;    
+}
+    /* FIN - SECCION Y FECHA DE LA NOTICIA */
+
+
+    /* TITULO NOTICIA INDIVIDUAL */
+.titulo-noticia-individual h3 {
+    font-size: 6em;
+    margin: 5px 0;
+    font-weight: 500;
+    line-height: 0.95em;
+    display: block;
+}
+    /* FIN - TITULO NOTICIA INDIVIDUAL */
+
+    /* SUBTITULO E IMAGEN */
+.img-subtitulo {
+    display: flex;
+}
+.img-subtitulo .subtitulo-noticia-individual {
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.img-subtitulo .subtitulo-noticia-individual p {
+    font-size: 2.5em;
+    line-height: 1.1em;
+    margin-top: 70px;
+    margin-right: 2%;
+}
+.img-subtitulo .img-noticia-individual {
+    flex: 60%;
+    margin-top: 30px;    
+}
+
+.img-subtitulo .img-noticia-individual .img-noticia-main {
+    width: 100%;
+}
+
+.boton-conocer button {
+    width: 100px !important;
+    height: 100px !important;
+    background: rgb(240, 41, 55) !important;
+    margin-top: 25px !important;
+}
+    /* FIN - SUBTITULO E IMAGEN */
+/* FIN - BLOQUE SUPERIOR */
+
+
+/* BLOQUE INFERIOR */
+.contenedor-texto {
+    margin: 0 25%;
+}
+
+.bloque-inferior {
+    margin-top: 30px;
+}
+.contenedor-texto .parrafo-noticia {
+    font-size: 2em;
+    text-align: justify;
+    color: rgb(0, 7, 14);
+}
+.imagen-texto-1 div{
+    display: none !important;
+}
+
+
+.bloque-inferior .contenedor-texto .imagen-texto-2 .img-noticia-texto-2 {
+   margin: 0 auto;
+}
+.imagen-texto-1 iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+    /* RESPONSIVE */
+    
+@media (max-width: 700px) {
+    .seccion-fecha {
+        flex-direction: column;
+        margin-top: 70px;
+    }
+    .seccion-fecha .seccion a h2 {
+        font-size: 2.2em;
+        margin: 0;
+    }
+    .seccion-fecha .fecha h2 {
+        font-size: 2.1em;
+        margin: 0;
+    }
+    .titulo-noticia-individual h3 {
+        font-size: 3.2em;
+    }
+    .img-subtitulo {
+        flex-direction: column-reverse;
+    }
+    .img-subtitulo .subtitulo-noticia-individual p {
+        font-size: 2em;
+        line-height: 0.9em;
+        margin-top: 5px;
+        margin-right: 1%;
+        margin-bottom: 5px;
+    }
+
+    .contenedor-texto {
+        margin: 0 7.5%;
+    }
+    .bloque-inferior {
+        margin-top: 0px;
+    }
+    .contenedor-texto .parrafo-noticia {
+        font-size: 1.8em;
+    }
+    .imagen-texto-1 iframe {
+        width: 100%;
+    }
+    .bloque-inferior .contenedor-texto .imagen-texto-2 .img-noticia-texto-2 {
+        width: 100%;
+    }
+    
+}
+
+
+@media (min-width: 700px) and  (max-width: 1150px) {
+    .seccion-fecha {
+        flex-direction: column;
+    }
+    .seccion-fecha h2 {
+        margin: 0;
+    }
+    .titulo-noticia-individual h3 {
+        font-size: 5em;
+    }
+    .boton-conocer {
+        display: none !important;
+    }
+    .img-subtitulo .subtitulo-noticia-individual p {
+    font-size: 2.2em;
+    line-height: 0.9em;
+    margin-top: 20px;
+    margin-right: 1%;
+    }
+    .imagen-texto-1 iframe {
+        width: 100%;
+    }
+    .bloque-inferior .contenedor-texto .imagen-texto-2 .img-noticia-texto-2 {
+        width: 100%;
+    }
+    .contenedor-texto {
+        margin: 0 15%;
+    }
+    .bloque-inferior {
+        margin-top: 5px;
+    }
+    
+}
+
+/* CAMBIAR LA IMAGEN EN CIERTO MOMENTO QUIEBRE DE PX */

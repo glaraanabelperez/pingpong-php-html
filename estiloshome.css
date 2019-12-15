@@ -1,0 +1,1334 @@
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap');
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+* {
+    font-size: 16px;
+    font-family: 'Darker Grotesque', sans-serif;  
+    color: rgba(0, 0, 0, 0.85);
+    
+}
+html {
+    overflow-x: hidden !important;
+}
+
+.htmlclass {
+    overflow-y: hidden;
+   
+}
+.lista-rutas a{
+    margin-left: 2%;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* NAV */
+/* BOTON hamburguesa */
+nav div ul li button {
+   background: transparent;
+   border: 0;
+   margin-top: 5px;
+   cursor: pointer; 
+}
+nav div ul li button::before {
+   background: transparent;
+   border: 0;
+   content: "\f0c9";
+   font-family: FontAwesome;
+   font-style: normal;
+   font-size: 1.4em;
+   color: black;
+}
+nav div ul li button:hover::before {
+    color: rgb(240, 41, 55);
+}
+/* FIN BOTON HAMBURGUESA */
+
+
+.contenedor-musica {
+    margin: 0 1%;
+}
+
+
+/* SECCIONES NAV*/
+nav div ul li a b {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+}
+nav div ul li a b:hover {
+    color: rgb(240, 41, 55);
+}
+nav div ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4em;
+    font-weight: 500;
+}
+nav div ul li a:hover {
+    color: rgb(240, 41, 55);
+}
+nav div ul li {
+    list-style: none;
+}
+nav div ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+/* FIN SECCIONES NAV*/
+
+
+/* NAV GENERAL */
+nav div {
+    display: block;
+    margin: 0 3%;
+    
+}
+nav {
+   margin-bottom: 20px;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 4;
+   background: rgba(255, 255, 255, 0.9);
+}
+
+/* FIN NAV GENERAL */
+
+
+/* BOTON CONOCE MAS */
+
+.boton-conocer {
+    display: flex;
+    justify-content: space-around;
+    height: 190px;
+    
+}
+
+.boton-conocer button {
+    background: #4858ef;
+    color: white;
+    font-weight: 600;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    border: 0;
+    cursor: pointer;
+    transition: 1s transform, 1s font-weight, 1s font-size; 
+} 
+.boton-conocer button:hover {
+    transform: scale(0.8, 0.8);
+    transition-duration: 0.4s;  
+    font-weight: 600;
+    font-size: 1.9em;
+}
+.invisible {
+    width: 10px;
+    background: transparent;
+}
+
+/* FIN BOTON CONOCER */
+
+
+
+
+/* SECCION MUSICA - GENERAL */
+main {
+    margin-top: 100px;
+}
+
+main section .contenedor-musica {
+    display: block;
+}
+
+.bloque {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.bloque:nth-of-type(1) {
+    margin-top: 50px;
+}
+
+.sesenta {
+    flex: 60%;
+    
+} 
+.cuarenta {
+    flex: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* MUSICA INTERIOR */
+/* ARTICULO TITULO SECCION (60% BLOQUE 1)*/
+.titulo h1{
+    font-size: 15em;
+    font-weight: 500;
+    width: 100%;
+    margin: 0 10px;
+    
+}
+.titulo h1:hover {
+    color: rgb(240, 41, 55);
+    cursor: pointer;
+}
+
+.contenedor-comentario {
+   
+    display: block;
+}
+
+
+.comentario {
+    
+    padding-left: 30%;
+    
+} 
+
+.comentario p {
+    font-size: 2.2em;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 15px;
+    margin-top: 0;
+    margin-left: 5px;
+}
+.comentario .by {
+    font-size: 1.5em;
+    font-weight: 100;
+    color: gray;
+    margin-right: 5%;
+    margin-top:0;
+}
+/* FIN ARTICULO SECCION */
+
+/* NOTICIA 40% 1 */
+
+.titulo-noticia {
+    flex: 40%;
+    font-size: 2.2em;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 3%;
+}
+.titulo-noticia:hover {
+    color: rgb(240, 41, 55);
+    cursor: pointer;
+}
+.extra-noticia {
+    flex: 40%;
+    font-size: 1.4em;
+    font-weight: 100;
+    line-height: 30px;
+    margin: 3%;
+}
+.info-noticia a {
+    text-decoration: none;
+}
+.imagen-1 img{
+    width: 100%;
+}
+
+/* FIN NOTICIA 40% 1 */
+
+/* NOTICIA SESENTA ABAJO */
+
+.noticia-sesenta {
+    display: flex;
+}
+.imagen-2 img{
+    width: 100%;
+}
+
+.noticia-sesenta .info-noticia {
+    flex-direction: column;
+}
+
+.noticia-sesenta .info-noticia .extra-noticia {
+    align-self: flex-end;
+}
+
+.noticia-sesenta {
+    margin-left: 3%;
+}
+
+/* FIN NOTICIA SESENTA ABAJO */
+/* FIN INTERIOR MUSICA */
+
+
+/* SECCION FOTOGRAFIA */
+
+.section-foto{
+    margin-top: 100px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.contenedor-foto1{
+    display: flex;
+    flex-direction: row;
+}
+
+
+    .izquierda-foto{
+        width: 70%;
+        display: flex;
+        flex-direction: column;     
+    }
+
+    
+        .izquierda-foto .superior1{
+            width: 100%;
+            display: block;     
+        }
+
+        .wow  {
+                font-size: 10em;
+                float: left;
+                transition-duration: 1s;
+}  
+       
+            .izquierda-foto .wow:hover{
+                transform: translateX(10px);
+                transition-duration: 1s;
+                
+            }
+        /*inferior1*/
+
+        .izquierda-foto .inferior1{
+            width: 100%;
+            } 
+
+            .izquierda-foto .subtitulo{
+                color: gray;
+                padding-left: 25%;
+                padding-bottom: 1%;
+                font-size: 2.4em;
+                transition-duration: 1s;
+            }
+            .izquierda-foto .subtitulo:hover{
+                transform: translateX(10px);
+                transition-duration: 1s;
+                
+            }
+            .izquierda-foto .parrafos{     
+                display: flex;
+                padding-left: 25%;
+                font-size: 1.6em;
+
+            
+            }
+            .izquierda-foto p{
+                width: 50%;
+                margin: 1%;
+
+
+            }
+            .izquierda-foto .inferior1 .parrafos a{
+                text-decoration: none;
+                font-size: 1.4em;
+
+            }
+
+
+    .derecha-foto{
+        width:30%;                           
+        display: flex;
+        flex-direction: column;
+        }
+        .derecha-foto .superior2 img{
+            width: 100%;
+           
+        }
+
+        .derecha-foto .inferior2{
+            display: flex;
+            flex-direction: row;
+        }
+            .derecha-foto .texto1{
+                color: grey;
+                font-size: 2.4em;
+                margin: 2%;
+            }
+            .derecha-foto .texto2{
+
+                font-size: 1.4em;
+
+                margin: 1%;
+                
+            }
+.contenedor-foto2 {
+    width: 100%;
+     
+}
+.caja1{
+    margin-top:5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+.contenedor-foto2 .caja1 p{
+    color: grey;
+    width: 20%;
+
+
+
+    font-size: 1.4em;
+
+    margin: 1%;
+    
+}
+.contenedor-foto2 .caja1 h2{
+    margin: 1%;
+    font-size: 2.4em;
+    width: 40%;
+    font-weight: lighter;
+    transition: 1s;
+    
+}
+.contenedor-foto2 .caja1 h2:hover{
+                transform: translateX(10px);
+                transition: 1s;
+                
+            }
+
+        .contenedor-foto2 button{
+        margin-right: 1%;
+        margin-left: 5%;
+        font-size: 2em;
+        border-radius: 100%;
+        height: 200px;
+        width: 200px;
+        border: 0px;
+        background: red;
+        color: white;
+        transition: 1s transform, 1s font-size;
+      
+        
+    }
+    .contenedor-foto2 button:hover{
+        transform: scale(0.7,0.7);
+        transition: 1s;
+        font-size: 2.2em;
+        
+    }
+/*-----------------------seccion footer lara*/
+
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        background-color: white;
+        
+    }
+    footer h3{
+        font-size: 1.5em;
+        margin: 0%;
+    }
+
+    footer div{
+        width: 25%;
+    
+       
+    }
+    footer li{
+        list-style:none;
+    }
+   
+    footer ul{
+        padding: 0%;
+    }
+    footer h3{
+        font-size: 2em;
+        font-weight: lighter;
+    }
+
+    footer li a{
+        font-size: 1.4em;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    footer li a:hover{
+        color: red;
+    }
+    footer .foot-div-3{
+        background-image: url(imagenes/logopongweb.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 9.8%;
+        padding: 0%;
+    }
+    footer .foot-div-4 {
+        margin-left: 2%;
+        
+    }
+    footer .foot-div-4 div {
+        margin: 2%;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    footer .boton-submit{
+        border: 0px;
+        background-color: blue;
+        color: white;
+    }
+    footer input{
+        font-size: 1.4em;
+        width: 300px;
+        height: 50px;
+        border: 0px;
+    }
+    .registrarse-oculto input{
+        background-color: #353434;
+    }
+
+  
+
+/*fin seccion fotografia/
+
+
+/* RESPONSIVE */
+/*FOTOGRAFIA*/
+
+@media (max-width: 700px){
+    .contenedor-foto1{
+    flex-direction: column;
+    }
+    .izquierda-foto{
+        width: 100%;
+    }
+    .izquierda-foto .parrafos{
+        flex-direction: column;
+
+        padding-left:0% !important;
+
+
+
+    }
+    .izquierda-foto .p{
+        width: 100%;
+        
+    }
+    .caja1{
+        flex-direction: column;
+    }
+    .derecha-foto{
+        width: 100%;
+    }
+    .derecha-foto .inferior2{
+        width:100%;
+        flex-direction: column;
+    }
+    .contenedor-foto2 .caja1 h2{
+        width:100%;
+    }
+    .contenedor-foto2 button{
+        width:100px;
+        height: 100px;
+        font-size: 1.2em !important;
+    }
+    .contenedor-foto2 .caja1 p{
+        width: 100% !important;
+    }
+    .izquierda-foto p{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .foot-div-3 {
+        display: none;
+    }
+    footer{
+        display: block;
+        margin-bottom: 20px;
+       
+    }
+    
+}
+
+/*fin responsive FOTOGRAFIA*/
+
+
+/* RESPONSIVE MUSICA */
+@media (max-width: 700px) {
+    .bloque {
+        flex-direction: column;
+    }
+    .bloque:nth-of-type(1) {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .noticia-sesenta {
+        flex-direction: column;
+        margin: 0;
+    }
+    .secciones {
+        display: none !important;
+    }
+    .titulo h1 {
+        font-size: 8em;
+        margin: 0 5px;
+    }
+    .comentario p {
+        font-size: 1.5em;
+    }
+    .comentario .by {
+        font-size: 1em;
+    }
+
+    .titulo-noticia {
+        font-size: 1.5em;
+    }
+    .extra-noticia {
+        display: none;
+    }
+    .imagen-noticia img {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .titulo-noticia {
+        margin: 10px auto;
+    }
+
+    .boton-conocer button {
+       display: none;
+    } 
+    .boton-conocer {
+        display: none;
+    }
+    nav div ul li a b {
+        color: rgb(240, 41, 55);
+    }
+    .contenedor-musica {
+        margin: 0 5%;
+    }
+    nav div {
+        width: 100vw;
+        margin: 0;
+    }
+    nav div ul {
+        margin: 0 2%;
+    }
+
+}
+
+
+
+@media (min-width: 700px) and (max-width: 800px) {
+
+    .bloque {
+        flex-direction: column;
+    }
+
+    .bloque:nth-of-type(1) {
+        margin-top: 0;
+    }
+    
+    .imagen-noticia {
+        margin: 0 auto;
+    }
+
+    .noticia-sesenta {
+        margin: 0;
+    }
+
+    .contenedor-musica {
+        margin: 0 5%;
+    }
+    .sesenta {
+        margin-bottom: 15px;
+    }
+    .cuarenta {
+        margin-bottom: 10px;
+    }
+    nav {
+        margin-bottom: 0;
+    }
+
+    
+}
+
+@media (min-width: 800px) and (max-width: 1150px) {
+
+    .bloque {
+        flex-direction: column;
+    }
+    
+    .cuarenta {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .info-noticia {
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen-noticia {
+        margin-top: 15px;
+    }
+    .contenedor-musica {
+        margin: 0 5%;
+    }
+    nav {
+        margin-bottom: 0;
+    }
+    .bloque:nth-of-type(1) {
+        margin-top: 0;
+    }
+
+}
+
+@media (min-width: 1150px) and (max-width: 1300px) {
+
+    .noticia-sesenta {
+        flex-direction: column;
+        margin: 0;
+    }
+    .noticia-sesenta .info-noticia {
+        flex-direction: row;
+    }
+    
+    .cuarenta .info-noticia {
+        margin: 0;
+        padding: 0;
+        align-self: flex-start;
+    }
+  
+    .cuarenta .imagen-noticia {
+        margin: auto 0;
+    }
+    
+    .sesenta .imagen-noticia {
+        margin: 0 auto;
+    }
+    .titulo h1 {
+        margin: 0;
+    }
+}
+
+
+/* hamburguesa  RESPONSIVE*/
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    .menu-superior .izquierda-20 .registrarme button {
+        width: 200px !important;
+        height: 200px !important;
+    }
+    .menu-superior .medio-40 {
+        flex: 50% !important;
+    }
+    .menu-superior .medio-40 {
+        margin-left: 15%;
+    }
+    .menu-superior .izquierda-20 .ingresar h6 {
+        margin-top: 60% !important;
+    }
+    .menu-superior .derecha-40 {
+        flex: 30% !important;
+    }
+    .menu-superior .derecha-40 h3 {
+        font-size: 4em !important;
+        
+    }
+    .menu-superior .derecha-40 h6 {
+        
+        margin-top: 40% !important;
+    }
+    .contenedor-mas-contenido {
+        margin-right: 30%;
+    }
+}
+@media (min-width: 700px) and (max-width: 900px) {
+    .menu-superior .derecha-40 h3 {
+        font-size: 2em !important;
+        
+    }
+    .menu-superior .izquierda-20 .registrarme button {
+        width: 150px !important;
+        height: 150px !important;
+    }
+    .menu-superior .izquierda-20 .ingresar h6 {
+        margin-top: 310px !important;
+    }
+    .menu-superior .derecha-40 h6 {
+        
+        margin-top: 80px !important;
+    }
+    .contenedor-mas-contenido {
+        margin-right: 0 !important;
+        width: 50% !important;
+    }
+    .menu-superior .medio-40 form input {
+        width: 240px !important;
+    }
+    input[type="checkbox" i] {
+        display: none !important;
+    }
+    span {
+        display: none;
+    }
+    #contenedor-menu {
+        margin: 1% !important;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+
+  
+
+    .footer-menu ul li a {
+        font-size: 1.8em !important;
+    }
+    
+    .menu-superior .derecha-40 {
+        display: none !important;
+    }
+    .menu-superior .medio-40 {
+        flex: 50% !important;
+    }
+    .menu-superior .izquierda-20 {
+        flex: 50% !important;
+    }
+    .menu-superior .izquierda-20 .registrarme button {
+        width: 140px !important;
+        height: 140px !important;
+        
+       
+    }
+    input[type="checkbox" i] {
+        width: 15px !important;
+        height: 15px !important;
+    }
+    .menu-superior .medio-40 form .boton-ingresar-cuenta {
+        background: rgba(0,0,0);
+        width: 140px !important;
+        height: 50px !important;
+        border: 0;
+        color: white;
+        font-size: 1.5em;
+        padding-bottom: 5px;
+        cursor: pointer; 
+    }
+    .menu-superior .medio-40 form input[type="email" i] {
+        background: rgba(0,0,0,0.16);
+        width: 200px;
+        height: 40px;
+        border: 0;
+    }
+    .menu-superior .medio-40 form input[type="password" i] {
+        background: rgba(0,0,0,0.16);
+        width: 200px;
+        height: 40px;
+        border: 0;
+    }
+    .menu-superior{
+        margin: 0 3% !important;
+    }
+    .footer-menu ul {
+        flex-direction: column !important;
+        
+    }
+    .menu-superior .izquierda-20 {
+        height: 70vh !important;
+    }
+    .ingresar h6 {
+        margin-top: 40vh !important;
+    }
+}
+
+@media (max-width:400px) {
+    .izquierda-20 {
+        display: none !important;
+    }
+
+
+    .footer-menu ul li a {
+        font-size: 1.8em !important;
+    }
+    
+    .menu-superior .derecha-40 {
+        display: none !important;
+    }
+    .menu-superior .medio-40 {
+        flex: 50% !important;
+    }
+    .menu-superior .izquierda-20 {
+        flex: 50% !important;
+    }
+    .menu-superior .izquierda-20 .registrarme button {
+        width: 140px !important;
+        height: 140px !important;
+        
+       
+    }
+    input[type="checkbox" i] {
+        width: 15px !important;
+        height: 15px !important;
+    }
+    .menu-superior .medio-40 form .boton-ingresar-cuenta {
+        background: rgba(0,0,0);
+        width: 140px !important;
+        height: 50px !important;
+        border: 0;
+        color: white;
+        font-size: 1.5em;
+        padding-bottom: 5px;
+        cursor: pointer; 
+    }
+    .menu-superior .medio-40 form input[type="email" i] {
+        background: rgba(0,0,0,0.16);
+        width: 200px;
+        height: 40px;
+        border: 0;
+    }
+    .menu-superior .medio-40 form input[type="password" i] {
+        background: rgba(0,0,0,0.16);
+        width: 200px;
+        height: 40px;
+        border: 0;
+    }
+    .menu-superior{
+        margin: 0 3% !important;
+    }
+    .footer-menu ul {
+        flex-direction: column !important;
+        
+    }
+    .menu-superior .izquierda-20 {
+        height: 70vh !important;
+    }
+    .ingresar h6 {
+        margin-top: 40vh !important;
+    }
+}
+
+/* FIN Hamburguesa RESPONSIVE */
+
+/* FIN RESPONSIVE */
+
+
+
+
+/* BOTON HAMBURGUESA MENU OCULTO*/
+/* NAV OCULTO */
+#hamburguesa {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0; 
+   /*  transition: transform ease-out 700ms; */
+    z-index: 4;
+    display: none;
+}
+.menu-oculto {
+    transform: translateX(100vw);
+    /* transition: 1s; */
+    display: block;  
+}
+.menu-activo {
+    transform: translateX(0);
+    background: rgb(240, 41, 55);
+    display: block !important;
+}
+#hamburguesa i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 3%;
+    margin-top: 0.02%;    
+    cursor: pointer;
+}
+
+/* CONTENIDO NAV OCULTO */
+/* General */
+#contenedor-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-superior {
+    display: flex;    
+}
+.menu-superior .izquierda-20 {
+    flex: 20%;
+    height: 90vh;
+}
+.menu-superior .medio-40 {
+    flex: 40%;    
+    
+}
+.menu-superior .derecha-40 {
+    flex: 40%;    
+    
+}
+
+
+/* interior */
+    /* izq 20 */
+.menu-superior .izquierda-20 .brand h1 {
+    
+    font-size: 2em;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.menu-superior .izquierda-20 .ingresar h6 {
+    margin-left: 5%;
+    display: block;
+    margin-top: 98%;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+
+.menu-superior .izquierda-20 .registrarme button {
+    background: #ffffff;
+    color:rgb(240, 41, 55);
+    font-weight: 600;
+    width: 250px;
+    height: 250px;
+    
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    font-size: 1.8em;
+    border: 0;
+    cursor: pointer;
+    transition: 1s transform, 1s font-weight, 1s font-size;
+    display: block;
+    margin: 0 auto;
+}
+.menu-superior .izquierda-20 .registrarme button:hover {
+    transform: scale(0.9, 0.9);
+    transition-duration: 0.5s;  
+    font-weight: 600;
+    font-size: 1.9em;
+}
+
+/* medio-40 */
+.menu-superior .medio-40 .mi-cuenta h6 {
+    
+    display: block;
+    margin-top: 20%;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+
+.menu-superior .medio-40 form label {
+    display: block;
+    font-size: 2.5em;
+    font-weight: 500;
+
+}
+.menu-superior .medio-40 form input {
+    background: rgba(0,0,0,0.16);
+    width: 280px;
+    height: 50px;
+    border: 0;
+}
+.menu-superior .medio-40 form .boton-ingresar-cuenta {
+    background: rgba(0,0,0);
+    width: 120px;
+    height: 60px;
+    border: 0;
+    color: white;
+    font-size: 2em;
+    padding-bottom: 5px;
+    cursor: pointer; 
+}
+
+input[type="checkbox" i] {
+    width: 15px !important;
+    height: 15px !important;
+}
+.menu-superior span {
+    color: black;
+    font-size: 1.5em;
+}
+
+/* derecha-40 */
+.menu-superior .derecha-40 .menu-principal h6 {
+    display: block;
+    margin-top: 3%;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+.menu-superior .derecha-40 h3 {
+    display: block;
+    margin: 0;
+    font-size: 8em;
+   
+    font-weight: 400;
+}
+.menu-superior .derecha-40 a {
+    text-decoration: none;
+}
+
+
+/* FOOTER MENU OCULTO */
+.footer-menu {
+    width: 100%;
+    
+}
+.footer-menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+.footer-menu ul li {
+    list-style: none;
+}
+.footer-menu ul li a {
+    text-decoration: none;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+.footer-menu ul li a:hover {
+   color: white;
+}
+
+
+
+
+/* BANNER PARTE PRINCIPAL DEL INDEX */
+.m_containerheader {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.m_caja1izq_containerheader
+{
+    margin: 0px;
+    padding: 0px;
+    flex: 30%;
+    border: 0.5px solid black;
+    line-height: 0.5em; 
+}
+.bloque1 {
+    font-size:4em; 
+    line-height: 1em;
+    padding: 2%;
+}
+.bloque2 {
+    font-size:2em;
+    line-height: 1em; 
+    padding: 2%; 
+}
+
+.bloque3 {
+    font-size:4em;
+    line-height: 1em; 
+    padding: 2%; 
+    margin: 0;  
+}
+.bloque3 h4 {
+    
+    display: block;
+    margin: 0 auto; 
+}
+
+.m_bochadecajas {
+    margin: 0px;
+    padding: 0px;
+    flex: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.m_containerarriba {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.m_caja2izq_containerheader {
+    margin: 0px;
+    padding: 0px;
+    background-color:rgb(240, 41, 55);
+    color: white;
+    flex: 50%;
+    line-height: 4em; 
+}
+
+.m_caja3izq_containerheader {
+    margin: 0px;
+    padding: 0px;
+    flex: 25%;
+    border: 0.5px solid black;
+    border-right: none;
+    border-left: none;
+}
+
+.m_caja4_containerheader {
+    margin: 0px;
+    padding: 0px;
+    flex:25%;
+    border: 0.5px solid black;
+}
+
+.mtextoleguas {
+    font-size: 2em;  
+    line-height: 1em; 
+    text-align: left;
+    padding: 2%;
+}
+
+.m_caja5dere_containerheader {
+
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color:#000000;
+    text-align: center;
+    flex: 25%;
+    border: 0.5px solid black;
+ }
+
+ .mbeatles {
+    font-size: 5em;
+ }
+
+.m_caja6dere_containerheader {
+    width: 75%;
+    margin: 0px;
+    padding: 0px;
+    border: 0.5px solid black;
+    border-left: none;
+    font-size: 3em; 
+}
+.m_caja6dere_containerheader h2{
+    
+    font-size: 1.8em; 
+}
+
+.m_containerabajo {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.m_containerheader h2 {
+    margin: 0;
+}
+
+.gatito {
+    display:block;  
+    margin: 0 auto;
+}
+
+.mtextocerati {
+    font-size: 3em;
+    padding: 10px;
+}
+
+
+.mtextoanita {
+    font-size: 1em; 
+    line-height: 1em; 
+    text-indent: 2em; 
+}
+
+.mbienvenidos {
+    font-size: 1em; 
+    padding: 10px;
+}
+header {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 80px;
+}
+
+/* RESPONSIVE BANNER */
+
+@media (min-width: 900px) and (max-width: 1150px) {
+
+.m_caja1izq_containerheader {
+    display: none;
+}
+
+.m_bochadecajas {
+    flex: 100%;
+    border: 0.5px solid black;
+}
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+
+    .m_caja4_containerheader {
+        display: none;
+    }
+    .m_caja1izq_containerheader {
+        display: none;
+    }
+    
+    .m_bochadecajas {
+        flex: 100%;
+        border: 0.5px solid black;
+    }
+    .m_caja6dere_containerheader h2{
+    
+        font-size: 1.3em; 
+    }
+}
+
+@media (max-width: 700px) {
+
+    .m_caja4_containerheader {
+        display: none;
+    }
+    .m_caja1izq_containerheader {
+        display: none;
+    }
+    
+    .m_bochadecajas {
+        flex: 100%;
+        border: 0.5px solid black;
+    }
+    .m_caja6dere_containerheader h2{
+    
+        font-size: 1.3em; 
+    }
+    .m_caja2izq_containerheader {
+        flex: 50% !important;
+    }
+    .m_caja5dere_containerheader {
+        flex: 50% !important;
+        background: white;
+    }
+    .mtextocerati{
+        font-size: 2em;
+    }
+    .mbienvenidos {
+        display: none;
+    }
+    .gatito {
+        margin-top: 20%;
+    }
+    .m_caja6dere_containerheader {
+        width: 50% !important;
+        background: black;
+    }
+    .m_caja6dere_containerheader h2 {
+        display: none;
+    }
+    .mbeatles {
+        font-size: 3em;
+    }
+}
+
