@@ -45,7 +45,7 @@ header('location: login.php');
     <hr>
     <div class="contenedor-a">
     <?php
-                $conexion = mysqli_connect("localhost", "id11888568_glaraanabelperez", "30608545", "id11888568_pongcultural");
+            $conexion = mysqli_connect();
                 $sql = "select autor.nombre from autor
                         where autor.id=$id_autor and activo=1";
                 $respuesta = mysqli_query($conexion, $sql);
