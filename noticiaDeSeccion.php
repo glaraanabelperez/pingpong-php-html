@@ -70,7 +70,7 @@
     <!-- FIN - NAV OCULTO -->
 <?php
     $id_seccion=$_GET['id_seccion'];
-    $conexion = mysqli_connect("localhost", "id11888568_glaraanabelperez", "30608545", "id11888568_pongcultural");
+            $conexion = mysqli_connect();
     $sql = "select * from seccion where seccion.id=$id_seccion"; 
     
     $respuesta = mysqli_query($conexion, $sql);
