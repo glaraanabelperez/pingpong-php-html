@@ -38,7 +38,7 @@ $id_autor = $_SESSION["id_autor"];
         <?php
          $id=$_GET['id'];
 
-         $conexion = mysqli_connect("localhost", "id11888568_glaraanabelperez", "30608545", "id11888568_pongcultural");
+            $conexion = mysqli_connect();
          $sql = "select noticia.fecha, noticia.id, noticia.titulo, noticia.subtitulo, seccion.nombre seccion, noticia.contenido, seccion_id from noticia
          inner join seccion on seccion_id = seccion.id
          where noticia.id = $id";       
