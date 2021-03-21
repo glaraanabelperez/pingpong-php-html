@@ -3,7 +3,7 @@
 $dir_subida = '/xampp/htdocs/mis_imagenes/';
 $destino = $dir_subida . $_FILES['miarchivo']['name'];
 
-$conexion = mysqli_connect("localhost", "id11888568_glaraanabelperez", "30608545", "id11888568_pongcultural");
+            $conexion = mysqli_connect();
 $sql= "insert into noticia (imagen_1) values ('$destino')";
 $rta = mysqli_query($conexion, $sql);
 
