@@ -8,7 +8,7 @@ $seccion_id=$_POST["seccion_id"];
 
 
 //var_dump($_POST);
-$conexion = mysqli_connect("localhost", "id11888568_glaraanabelperez", "30608545", "id11888568_pongcultural");
+            $conexion = mysqli_connect();
 $sql = "update noticia set fecha='$fecha', titulo='$titulo', subtitulo='$subtitulo', contenido='$contenido', seccion_id='$seccion_id' 
         where noticia.id = $id";
         
