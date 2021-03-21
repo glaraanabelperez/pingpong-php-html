@@ -35,7 +35,7 @@ $id_autor = $_SESSION["id_autor"];
             <section class="contenedor-bis">
                 <form class="form" action="cargar-noticia-servidor.php" method="post" enctype="multipart/form-data">
                         <?php
-                $conexion = mysqli_connect("localhost", "id11888568_glaraanabelperez", "30608545", "id11888568_pongcultural");
+            $conexion = mysqli_connect();
                 $sql="select autor.nombre from autor where id=$id_autor";
                         $respuesta= mysqli_query($conexion, $sql);
                         while ($fila=mysqli_fetch_array($respuesta)){
