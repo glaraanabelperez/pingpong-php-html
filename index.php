@@ -79,7 +79,7 @@
     <!-- HEADER / BANNER - MARIETTA -->
 <?php
     
-    $conexion = mysqli_connect("localhost", "id11888568_glaraanabelperez", "30608545", "id11888568_pongcultural");
+            $conexion = mysqli_connect();
     $sql = "select * from noticia 
 where activo='1'
 ORDER BY fecha desc LIMIT 4"; 
@@ -156,7 +156,7 @@ $fila = mysqli_fetch_array($respuesta);
     <!-- JUANI MUSICA -->
 <?php
     
-    $conexion = mysqli_connect("localhost", "id11888568_glaraanabelperez", "30608545", "id11888568_pongcultural");
+            $conexion = mysqli_connect();
     $sql = "select noticia.id, noticia.fecha, noticia.titulo, 
 noticia.subtitulo, noticia.imagen_1 from noticia 
 where activo='1' and seccion_id=2
@@ -259,7 +259,7 @@ $fila = mysqli_fetch_array($respuesta);
     <!-- FIN MUSICA -->
 <!-- LARA FOTOGRAFIA -->
 <?php 
-$conexion = mysqli_connect("localhost", "id11888568_glaraanabelperez", "30608545", "id11888568_pongcultural");
+            $conexion = mysqli_connect();
 $sql = "select noticia.id, noticia.fecha, noticia.titulo, 
 noticia.subtitulo, noticia.imagen_1 from noticia 
 where activo='1' and seccion_id=1
