@@ -6,7 +6,7 @@ if (!empty($_POST)) {
 	// Logitud minima en la base 60
     $password_encriptado = password_hash($password, PASSWORD_BCRYPT);
     
-    $conexion = mysqli_connect("localhost", "id11888568_glaraanabelperez", "30608545", "id11888568_pongcultural");
+            $conexion = mysqli_connect();
     $sql = "select * from autor where nombre='$nombre' and activo=1";
     // si hay dos nombres igual es que pasa____????-------------------------------------------------------ACA
     $rta = mysqli_query($conexion, $sql);
