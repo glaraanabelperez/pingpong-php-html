@@ -5,7 +5,7 @@ $admin = $_SESSION["admin"];
 
             $id_autor=$_GET["id_autor"];
 
-            $conexion = mysqli_connect("localhost", "id11888568_glaraanabelperez", "30608545", "id11888568_pongcultural");
+            $conexion = mysqli_connect();
             $sql = "update autor set activo=0 where autor.id=$id_autor";
                 $respuesta1 = mysqli_query($conexion, $sql);
                 //echo $sql;
