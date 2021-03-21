@@ -36,7 +36,7 @@ if (isset($_SESSION['admin'])) {
     
         <?php
             //$id=$_GET["id_autor"];
-            $conexion = mysqli_connect("localhost", "id11888568_glaraanabelperez", "30608545", "id11888568_pongcultural");
+            $conexion = mysqli_connect();
             $sql = "select * from autor where activo=1";
                 $respuesta1 = mysqli_query($conexion, $sql);
                 //echo $sql;
