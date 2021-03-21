@@ -32,7 +32,7 @@ if (move_uploaded_file($_FILES['miarchivo']['tmp_name'], $destino)) {
         </script>";
 }
 
-$conexion = mysqli_connect("localhost", "id11888568_glaraanabelperez", "30608545", "id11888568_pongcultural");
+            $conexion = mysqli_connect();
 $sql= "insert into noticia (autor_id, titulo,subtitulo, fecha, seccion_id, contenido, activo, imagen_1) 
 values ($id_autor,'$titulo', '$subtitulo', '$fecha', $seccion_id, '$contenido', $activo, '$imagen_1')";
 $rta = mysqli_query($conexion, $sql);
