@@ -7,7 +7,7 @@
         // Logitud minima en la base 60
         $password_encriptado = password_hash($password, PASSWORD_BCRYPT);
 
-        $conexion = mysqli_connect("localhost", "id11888568_glaraanabelperez", "30608545", "id11888568_pongcultural");
+            $conexion = mysqli_connect();
         $sql = "insert into usuario (username, pwd, activo) values ('$nombre', '$password_encriptado', 1)";
         
         $rta = mysqli_query($conexion, $sql);
