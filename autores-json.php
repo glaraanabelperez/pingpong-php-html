@@ -1,9 +1,9 @@
   
 <?php
-const DB_HOST = 'localhost';
-const DB_USER = 'root';
-const DB_PWD = '';
-const DB_DB = 'utnwebmaster';
+const DB_HOST = 
+const DB_USER =
+const DB_PWD =
+const DB_DB =
 ?>  
   <?php
 /// solo para hacer peticiones estando en puertos distintos!!!!
