@@ -1,7 +1,7 @@
 <?php
 $idborrar=$_GET["id"];
 
-$conexion = mysqli_connect("localhost", "id11888568_glaraanabelperez", "30608545", "id11888568_pongcultural");
+            $conexion = mysqli_connect();
 
 //$idborrar = $_GET["id"];
 $sql = "delete from noticia where id=$idborrar";
