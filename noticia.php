@@ -74,7 +74,7 @@
 <?php
     $id_noticia=$_GET['id_noticia'];
 
-    $conexion = mysqli_connect("localhost", "id11888568_glaraanabelperez", "30608545", "id11888568_pongcultural");
+            $conexion = mysqli_connect();
     $sql = "select noticia.fecha, seccion.nombre seccion, noticia.titulo, 
     noticia.subtitulo, noticia.contenido, noticia.imagen_1 from noticia 
     inner join seccion on seccion_id=seccion.id
