@@ -8,7 +8,7 @@
 
         $password_encriptado = password_hash($password, PASSWORD_BCRYPT);
         
-        $conexion = mysqli_connect("localhost", "id11888568_glaraanabelperez", "30608545", "id11888568_pongcultural");
+            $conexion = mysqli_connect();
         $sql = "select * from autor where nombre='$nombre'";
         $rta = mysqli_query($conexion, $sql);
         $fila = mysqli_fetch_array($rta);
